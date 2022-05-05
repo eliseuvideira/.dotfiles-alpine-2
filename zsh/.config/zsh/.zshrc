@@ -19,3 +19,9 @@ if [ ! -d "${ZSHDOTDIR}/plugins/zsh-autosuggestions" ]; then
 fi
 
 source "${ZSHDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+if [ ! -d "${ZSHDOTDIR}/plugins/zsh-vi-mode" ]; then
+  git clone https://github.com/jeffreytse/zsh-vi-mode "${ZSH_CUSTOM}/plugins/zsh-vi-mode"
+fi
+
+source "${ZSHDOTDIR}/plugins/zsh-vi-mode/zsh-vi-mode.zsh"
