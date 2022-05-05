@@ -14,8 +14,8 @@ fi
 
 source "${ZSHDOTDIR}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
-if [ ! -d "${ZSH_CUSTOM}/plugins/zsh-autosuggestions" ]; then
-  git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM}/plugins/zsh-autosuggestions"
+if [ ! -d "${ZSHDOTDIR}/plugins/zsh-autosuggestions" ]; then
+  git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSHDOTDIR}/plugins/zsh-autosuggestions"
 fi
 
 source "${ZSHDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
