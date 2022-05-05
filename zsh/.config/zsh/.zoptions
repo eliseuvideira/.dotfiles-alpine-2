@@ -57,8 +57,8 @@ zstyle ':vcs_info:*' enable git
 precmd() {
   vcs_info
   if ! [ -n "${vcs_info_msg_0_}" ]; then
-    PS1="%F{white}[%{$fg[green]%}%n@%m%F{white}:%F{blue}%3~%F{white}]%(#.#.$) "
+    PS1="%F{white}[%F{green}%n@%m%F{white}:%F{blue}%3~%F{white}]%(#.#.$) "
   else
-    PS1="%F{white}[%{$fg[green]%}%n@%m%F{white}:%F{blue}%3~%F{white}] %F{grey}git:(%F{cyan}${vcs_info_msg_0_}%F{grey}) %F{white}%(#.#.$) "
+    PS1="%F{white}[%F{green}%n@%m%F{white}:%F{blue}%3~%F{white}] %F{grey}git:(%F{cyan}${vcs_info_msg_0_}%F{grey}) %F{white}%(#.#.$) "
   fi
 }
